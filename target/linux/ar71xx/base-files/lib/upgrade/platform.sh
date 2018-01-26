@@ -226,6 +226,7 @@ platform_check_image() {
 	dir-615-i1|\
 	dir-825-c1|\
 	dir-835-a1|\
+	dlan-1200-wifi-ac|\
 	dlan-hotspot|\
 	dlan-pro-1200-ac|\
 	dlan-pro-500-wp|\

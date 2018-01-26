@@ -66,6 +66,7 @@ case "$FIRMWARE" in
 	cf-e355ac|\
 	cf-e380ac-v1|\
 	cf-e380ac-v2|\
+	dlan-1200-wifi-ac|\
 	dlan-pro-1200-ac|\
 	sr3200|\
 	xd3200)

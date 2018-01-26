@@ -221,6 +221,12 @@ define LegacyDevice/DLRTDEV01
 endef
 LEGACY_DEVICES += DLRTDEV01
 
+define LegacyDevice/dLAN_1200_wifi_ac
+  DEVICE_TITLE := devolo dLAN 1200+ WiFi ac
+  DEVICE_PACKAGES := kmod-ath10k ath10k-firmware-qca988x openplc-utils
+endef
+LEGACY_DEVICES += dLAN_1200_wifi_ac
+
 define LegacyDevice/dLAN_Hotspot
   DEVICE_TITLE := devolo dLAN Hotspot
 endef

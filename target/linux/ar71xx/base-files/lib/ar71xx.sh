@@ -594,6 +594,9 @@ ar71xx_board_detect() {
 	*"DIR-869 rev. A1")
 		name="dir-869-a1"
 		;;
+	*"dLAN 1200+ WiFi ac")
+		name="dlan-1200-wifi-ac"
+		;;
 	*"dLAN Hotspot")
 		name="dlan-hotspot"
 		;;

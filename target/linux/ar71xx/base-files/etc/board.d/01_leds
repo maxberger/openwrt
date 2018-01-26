@@ -387,6 +387,11 @@ dir-615-i1)
 	ucidef_set_led_netdev "wan" "WAN" "d-link:green:wan" "eth0"
 	ucidef_set_led_wlan "wlan" "WLAN" "d-link:green:wlan" "phy0tpt"
 	;;
+dlan-1200-wifi-ac)
+	ucidef_set_led_wlan "wlan" "WLAN" "devolo:status:wlan" "phy0radio"
+	ucidef_set_led_gpio "plcw" "dLAN" "devolo:status:dlan" "17" "0"
+	ucidef_set_led_gpio "plcr" "dLAN" "devolo:error:dlan" "16" "0"
+	;;
 dlan-hotspot)
 	ucidef_set_led_wlan "wlan" "WLAN" "devolo:green:wifi" "phy0tpt"
 	;;

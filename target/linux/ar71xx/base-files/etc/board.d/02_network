@@ -347,6 +347,12 @@ ar71xx_setup_interfaces()
 		ucidef_add_switch "switch0" \
 			"0:lan" "1:lan" "2:lan" "3:lan" "5@eth0"
 		;;
+	dlan-1200-wifi-ac)
+		ucidef_set_interface_lan "eth0"
+		ucidef_add_switch "switch0" \
+			"0u@eth0" "2:lan" "3:lan" "4:lan"
+		ucidef_add_switch_attr "switch0" "enable" "false"
+		;;
 	dlan-pro-1200-ac)
 		ucidef_set_interface_lan "eth0"
 		ucidef_add_switch "switch0" \

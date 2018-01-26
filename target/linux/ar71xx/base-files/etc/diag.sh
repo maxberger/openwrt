@@ -165,6 +165,9 @@ get_status_led() {
 	dir-869-a1)
 		status_led="d-link:white:status"
 		;;
+	dlan-1200-wifi-ac)
+		status_led="devolo:status:wlan"
+		;;
 	dlan-hotspot)
 		status_led="devolo:green:wifi"
 		;;
