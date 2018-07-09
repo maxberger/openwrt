@@ -23,8 +23,11 @@ get_status_led() {
 	antminer-s1|\
 	antminer-s3|\
 	antminer-r1|\
+	e1700ac-v2|\
+	e600gac-v2|\
 	eap120|\
 	minibox-v1|\
+	packet-squirrel|\
 	som9331|\
 	sr3200|\
 	tl-wr802n-v2|\
@@ -61,8 +64,12 @@ get_status_led() {
 	archer-c58-v1|\
 	archer-c59-v1|\
 	archer-c60-v1|\
+	archer-c60-v2|\
 	archer-c7-v4|\
+	archer-c7-v5|\
 	fritz300e|\
+	fritz4020|\
+	fritz450e|\
 	gl-usb150|\
 	mr12|\
 	mr16|\
@@ -72,6 +79,23 @@ get_status_led() {
 	tl-wpa8630|\
 	tl-wr902ac-v1)
 		status_led="$board:green:power"
+		;;
+	archer-c5|\
+	archer-c7|\
+	tl-mr10u|\
+	tl-mr12u|\
+	tl-mr13u|\
+	tl-wdr4300|\
+	tl-wdr4900-v2|\
+	tl-wr703n|\
+	tl-wr710n|\
+	tl-wr720n-v3|\
+	tl-wr802n-v1|\
+	tl-wr810n|\
+	tl-wr810n-v2|\
+	tl-wr940n-v4|\
+	tl-wr941nd-v6)
+		status_led="tp-link:blue:system"
 		;;
 	ap90q|\
 	cpe830|\
@@ -108,9 +132,6 @@ get_status_led() {
 	rocket-m-xw)
 		status_led="ubnt:green:link4"
 		;;
-	rocket-m-ti)
-		status_led="ubnt:green:link6"
-		;;
 	bxu2000n-2-a1)
 		status_led="bhu:green:status"
 		;;
@@ -132,8 +153,10 @@ get_status_led() {
 	cf-e320n-v2)
 		status_led="$board:blue:wlan"
 		;;
+	cf-e375ac|\
 	cf-e380ac-v1|\
-	cf-e380ac-v2)
+	cf-e380ac-v2|\
+	cf-e385ac)
 		status_led="$board:blue:wlan2g"
 		;;
 	cpe510)
@@ -143,6 +166,7 @@ get_status_led() {
 	cr5000)
 		status_led="pcs:amber:power"
 		;;
+	dap-1330-a1|\
 	dgl-5500-a1|\
 	dhp-1565-a1|\
 	dir-505-a1|\
@@ -181,12 +205,18 @@ get_status_led() {
 		status_led="$board:green:sig4"
 		;;
 	dragino2|\
-	oolite)
+	oolite-v1)
 		status_led="$board:red:system"
 		;;
 	dw33d|\
 	r36a)
 		status_led="$board:blue:status"
+		;;
+	e600g-v2|\
+	oolite-v5.2-dev|\
+	ts-d084|\
+	wifi-pineapple-nano)
+		status_led="$board:blue:system"
 		;;
 	eap300v2)
 		status_led="engenius:blue:power"
@@ -218,7 +248,8 @@ get_status_led() {
 		;;
 	gl-ar750|\
 	hiveap-121|\
-	nbg6716)
+	nbg6716|\
+	wam250)
 		status_led="$board:white:power"
 		;;
 	hiwifi-hc6361)
@@ -234,6 +265,15 @@ get_status_led() {
 		;;
 	jwap230)
 		status_led="$board:green:led1"
+		;;
+	koala)
+		status_led="$board:blue:sys"
+		;;
+	lan-turtle)
+		status_led="$board:orange:system"
+		;;
+	lbe-m5)
+		status_led="ubnt:green:sys"
 		;;
 	ls-sr71)
 		status_led="ubnt:green:d22"
@@ -305,6 +345,7 @@ get_status_led() {
 		status_led="$board:green:wan"
 		;;
 	rb-2011il|\
+	rb-2011ils|\
 	rb-2011l|\
 	rb-2011uas|\
 	rb-2011uas-2hnd)
@@ -348,9 +389,13 @@ get_status_led() {
 	rb-sxt5n)
 		status_led="rb:green:power"
 		;;
+	re355|\
 	re450|\
 	sc300m)
 		status_led="$board:blue:power"
+		;;
+	rocket-m-ti)
+		status_led="ubnt:green:link6"
 		;;
 	routerstation|\
 	routerstation-pro)
@@ -364,6 +409,9 @@ get_status_led() {
 		;;
 	qihoo-c301)
 		status_led="qihoo:green:status"
+		;;
+	t830)
+		status_led="$board:green:usb"
 		;;
 	tellstick-znet-lite)
 		status_led="tellstick:white:system"
@@ -429,25 +477,11 @@ get_status_led() {
 	tl-wr941nd-v5)
 		status_led="tp-link:green:system"
 		;;
-	archer-c5|\
-	archer-c7|\
-	tl-mr10u|\
-	tl-mr12u|\
-	tl-mr13u|\
-	tl-wdr4300|\
-	tl-wdr4900-v2|\
-	tl-wr703n|\
-	tl-wr710n|\
-	tl-wr720n-v3|\
-	tl-wr802n-v1|\
-	tl-wr810n|\
-	tl-wr810n-v2|\
-	tl-wr940n-v4|\
-	tl-wr941nd-v6)
-		status_led="tp-link:blue:system"
-		;;
 	tl-wr841n-v9)
 		status_led="tp-link:green:qss"
+		;;
+	tl-wr940n-v6)
+		status_led="tp-link:orange:diag"
 		;;
 	tl-wdr6500-v2)
 		status_led="tp-link:white:system"
